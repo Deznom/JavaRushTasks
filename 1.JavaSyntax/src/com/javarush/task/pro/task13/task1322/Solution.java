@@ -9,15 +9,30 @@ public class Solution {
     }
 
     public static String getShapeNameByCountOfCorners(int countOfCorner) {
-        String shape = switch (countOfCorner) {
-            case 3 -> "Треугольник";
-            case 4 -> "Четырехугольник";
-            case 5 -> "Пятиугольник";
-            case 6 -> "Шестиугольник";
-            case 7 -> "Семиугольник";
-            case 8 -> "Восьмиугольник";
-            default -> "Другая фигура";
-        };
+        String shape;
+        switch (countOfCorner) {
+            case 3:
+                shape = "Треугольник";
+                break;
+            case 4:
+                shape = "Четырехугольник";
+                break;
+            case 5:
+                shape = "Пятиугольник";
+                break;
+            case 6:
+                shape = "Шестиугольник";
+                break;
+            case 7:
+                shape = "Семиугольник";
+                break;
+            case 8:
+                shape = "Восьмиугольник";
+                break;
+            default:
+                shape = "Другая фигура";
+                break;
+        }
         return shape;
     }
 }
